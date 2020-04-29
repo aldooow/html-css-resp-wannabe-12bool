@@ -1,0 +1,179 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.box.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* display < 420px */
+@media screen and (max-width: 419px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #ffffff;
+    font-size: 25px;
+    color: #1b3c59;
+    width: 419px;
+    font-family: "Comic Sans MS", cursive, sans-serif
+  }
+  body h3 {
+    color: #60ce4e;
+  }
+  body img {
+    height: 175px;
+    margin-top: 25px;
+  }
+  body .box .row {
+    width: 100%;
+    margin: 10px;
+    margin-top: 0;
+    padding: 20px;
+  }
+  body .box.grey {
+    background: #1b3c59;
+    border: 3px solid grey;
+    border-radius: 5px;
+    border-radius: 25px;
+
+  }
+  body #lezioni .row>.left,
+  body #lezioni .row>.right {
+    width: 100%;
+    float: none;
+  }
+  body #steps .row>.left,
+  body #steps .row>.central,
+  body #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+  body #steps,
+  body #why {
+    color: #ffffff;
+    margin: 20px 0;
+  }
+}
+/* END display < 420px */
+
+/* display tablet (max 768px) */
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 768px;
+    background: #ffffff;
+    font-size: 25px;
+    color: #1b3c59;
+    font-family: "Comic Sans MS", cursive, sans-serif
+  }
+  body .box .row {
+    width: 100%;
+  }
+  body img {
+    height: 175px;
+    margin-top: 25px;
+  }
+  body h3 {
+    color: #60ce4e;
+  }
+  body .box.grey {
+    background: #1b3c59;
+    border: 3px solid grey;
+    border-radius: 25px;
+    padding: 40px;
+  }
+  body #lezioni  {
+    margin: 100px;
+  }
+  body #steps,
+  body #why {
+    color: #ffffff;
+    margin: 20px 20px;
+  }
+  body #steps .row>.left,
+  body #steps .row>.central,
+  body #steps .row>.right {
+    float: left;
+    width: 45%;
+    border:1px solid black;
+    border-radius: 3%;
+    margin: 10px;
+    background: #ffffff;
+    color: #1b3c59;
+    padding: 15px;
+  }
+}
+/* END display tablet (768px) */
