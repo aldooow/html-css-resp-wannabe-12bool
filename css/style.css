@@ -126,14 +126,14 @@ img {
 /* END display < 420px */
 
 /* display tablet (max 768px) */
-@media screen and (min-width: 420px) and (max-width: 768px) {
+@media screen and (min-width: 420px) and (max-width: 767px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body {
-    width: 768px;
+
     background: #ffffff;
     font-size: 25px;
     color: #1b3c59;
