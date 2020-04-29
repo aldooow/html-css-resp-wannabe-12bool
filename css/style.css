@@ -1,3 +1,6 @@
+/* CSS ORIGINAL */
+
+/* NOTA: del CSS originale, ho lasciato in "comment" tutto cio che non è neccesario perche gia dato dal FRAMEWORK 12bool.css . */
 .row {
   width: 992px;
   margin-left: auto;
@@ -6,11 +9,11 @@
 }
 
 /* BLOCCO LEZIONI */
-#lezioni .row>.left,
+/* #lezioni .row>.left,
 #lezioni .row>.right {
   width: 50%;
   float: left;
-}
+} */
 
 #lezioni .row img {
   /* per centrare orizzontalmente */
@@ -24,12 +27,12 @@
 }
 
 /* BLOCCO STEPS */
-#steps .row>.left,
+/* #steps .row>.left,
 #steps .row>.central,
 #steps .row>.right {
   float: left;
   width: 33%;
-}
+} */
 
 #steps {
   text-align: center;
@@ -40,12 +43,12 @@
   text-align: center;
 }
 
-#why .row>.first,
+/* #why .row>.first,
 #why .row>.second,
 #why .row>.third {
   width: 100%;
   margin-top: 80px;
-}
+} */
 
 #why .row img {
   background-color: #428bca;
@@ -54,11 +57,11 @@
 }
 
 /* COMMON */
-.row::after {
+/* .row::after {
   content: '';
   display: table;
   clear: both;
-}
+} */
 
 .box.grey {
   background-color: #f9f9f9;
@@ -71,6 +74,8 @@ img {
 .clear {
   clear: both;
 }
+/* END CSS ORIGINAL */
+
 
 /* display < 420px */
 @media screen and (max-width: 419px) {
@@ -83,14 +88,15 @@ img {
     background: #ffffff;
     font-size: 25px;
     color: #1b3c59;
-    width: 419px;
+    width: 100%;
     font-family: "Comic Sans MS", cursive, sans-serif
   }
   body h3 {
     color: #60ce4e;
   }
   body img {
-    height: 175px;
+    height: 125px;
+    width: auto;
     margin-top: 25px;
   }
   body .box .row {
@@ -106,17 +112,6 @@ img {
     border-radius: 25px;
 
   }
-  body #lezioni .row>.left,
-  body #lezioni .row>.right {
-    width: 100%;
-    float: none;
-  }
-  body #steps .row>.left,
-  body #steps .row>.central,
-  body #steps .row>.right {
-    float: none;
-    width: 100%;
-  }
   body #steps,
   body #why {
     color: #ffffff;
@@ -126,24 +121,26 @@ img {
 /* END display < 420px */
 
 /* display tablet (max 768px) */
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 420px) and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body {
-
+    width: 100%;
     background: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     color: #1b3c59;
     font-family: "Comic Sans MS", cursive, sans-serif
   }
   body .box .row {
     width: 100%;
+    margin-top: 0;
   }
   body img {
-    height: 175px;
+    height: 150px;
+    width: auto;
     margin-top: 25px;
   }
   body h3 {
@@ -153,10 +150,10 @@ img {
     background: #1b3c59;
     border: 3px solid grey;
     border-radius: 25px;
-    padding: 40px;
+    padding: 20px;
   }
   body #lezioni  {
-    margin: 100px;
+    margin: 20px;
   }
   body #steps,
   body #why {
@@ -166,8 +163,6 @@ img {
   body #steps .row>.left,
   body #steps .row>.central,
   body #steps .row>.right {
-    float: left;
-    width: 45%;
     border:1px solid black;
     border-radius: 3%;
     margin: 10px;
