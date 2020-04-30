@@ -77,8 +77,8 @@ img {
 /* END CSS ORIGINAL */
 
 
-/* display < 420px */
-@media screen and (max-width: 769px) {
+/* display < 768px */
+@media screen and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
@@ -118,10 +118,10 @@ img {
     margin: 20px 0;
   }
 }
-/* END display < 420px */
+/* END display < 768px */
 
-/* display tablet (max 768px) */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+/* display tablet (> 768px and < 992px ) */
+@media screen and (min-width: 769px) and (max-width: 991px) {
   * {
     margin: 0;
     padding: 0;
@@ -171,4 +171,4 @@ img {
     padding: 15px;
   }
 }
-/* END display tablet (768px) */
+/* END display tablet (> 768px and < 992px ) */
