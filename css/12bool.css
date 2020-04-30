@@ -1,4 +1,4 @@
-/*  debud */
+/*  debug */
 .debug .container {
   border: 1px solid none;
   background: lightgreen;
@@ -39,7 +39,7 @@
 /* end general */
 
 
-@media all and (max-width: 419px)) {
+@media all and (max-width: 768px)) {
   .col-xs-1 {
     width: calc( (100% / 12) * 1 );
   }
@@ -119,7 +119,7 @@
 
 }
 
-@media all and (min-width: 420px) and (max-width: 768px) {
+@media all and (min-width: 769px) and (max-width: 992px) {
   .col-md-1 {
     width: calc( (100% / 12) * 1 );
   }
@@ -199,7 +199,7 @@
 }
 
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 993px) {
   .col-lg-1 {
     width: calc( (100% / 12) * 1 );
   }

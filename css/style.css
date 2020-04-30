@@ -78,7 +78,7 @@ img {
 
 
 /* display < 420px */
-@media screen and (max-width: 419px) {
+@media screen and (max-width: 769px) {
   * {
     margin: 0;
     padding: 0;
@@ -121,7 +121,7 @@ img {
 /* END display < 420px */
 
 /* display tablet (max 768px) */
-@media screen and (min-width: 420px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   * {
     margin: 0;
     padding: 0;
