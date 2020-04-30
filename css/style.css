@@ -164,14 +164,23 @@ img {
   body #lezioni  {
     margin: 20px;
   }
+  body #lezioni .row .left,
+  body #lezioni .row .right {
+    border:1px solid black;
+    border-radius: 3%;
+    margin: 10px;
+    background: #ffffff;
+    color: #1b3c59;
+    padding: 15px;
+  }
   body #steps,
   body #why {
     color: #ffffff;
     margin: 20px 20px;
   }
-  body #steps .row>.left,
-  body #steps .row>.central,
-  body #steps .row>.right {
+  body #steps .row .left,
+  body #steps .row .central,
+  body #steps .row .right {
     border:1px solid black;
     border-radius: 3%;
     margin: 10px;
