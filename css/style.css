@@ -43,9 +43,9 @@
   text-align: center;
 }
 
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
+#why .row .first,/* tolto > (figli diretti di row) su tutti 3. */
+#why .row .second,
+#why .row .third {
   width: 100%;
   margin-top: 80px;
 }
@@ -79,6 +79,7 @@ img {
 /* ADD NEW CSS */
 h1,
 h3,
+hr,
 img {
   margin: 10px 0;
 }
